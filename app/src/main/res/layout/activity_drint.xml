@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".naxutest"
+    tools:context=".Drint"
     android:background="@drawable/backgr">
 
     <LinearLayout
@@ -13,6 +13,8 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="35dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
@@ -22,31 +24,33 @@
             android:layout_width="170dp"
             android:layout_height="115dp"
 
-            app:srcCompat="@drawable/mser" />
+            app:srcCompat="@drawable/coca" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Մսային նախուտեստներ/Закуски/Meat snacks"
+            android:text="Coca-Cola"
             android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:text="500դր/др/amd"
             android:textAlignment="center"
-            android:text="3000դր/др/amd" />
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="210dp"
         android:layout_marginTop="35dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
@@ -56,25 +60,27 @@
             android:layout_width="170dp"
             android:layout_height="115dp"
 
-            app:srcCompat="@drawable/panir" />
+            app:srcCompat="@drawable/fanta" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Պանրի տեսականի/Сыры/Cheese"
+            android:text="Fanta"
             android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2500դր/др/amd"
+            android:text="500դր/др/amd"
             android:textAlignment="center"
             android:textColor="@color/white" />
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -89,25 +95,62 @@
             android:layout_width="170dp"
             android:layout_height="115dp"
 
-            app:srcCompat="@drawable/marinad" />
+            app:srcCompat="@drawable/sprite" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Թուներ/Маринады/Marinades"
+            android:text="Sprite"
             android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1800դր/др/amd"
+            android:text="500դր/др/amd"
             android:textAlignment="center"
             android:textColor="@color/white" />
     </LinearLayout>
+
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-85dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView50"
+            android:layout_width="170dp"
+            android:layout_height="115dp"
+
+            app:srcCompat="@drawable/noy" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Noy Ջուր/Вода/Water"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="300դր/др/amd"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="210dp"

@@ -5,21 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/w12e"
+    android:background="@drawable/download2"
     tools:context=".MainMenu">
 
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:ignore="MissingConstraints">
-                <EditText
-                    :ignore="MissingConstraints"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:hint="Որոնում/Search"
-                    android:background="@color/white"
-                    tools:ignore="MissingConstraints" />
-        </LinearLayout>
+<!--        <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                tools:ignore="MissingConstraints">-->
+<!--                <EditText-->
+<!--                    :ignore="MissingConstraints"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:hint="Որոնում/Search"-->
+<!--                    android:background="@color/white"-->
+<!--                    tools:ignore="MissingConstraints" />-->
+<!--        </LinearLayout>-->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,10 +31,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
+            android:onClick="snack"
             android:layout_marginTop="160dp"
             android:text="Նախուտեստներ/Snacks/Закуски"
             android:textSize="22dp"
-
+            android:textColor="#78D2FA"
             android:shadowDx="10"
             android:shadowDy="15"
             android:shadowRadius="6"
@@ -49,7 +50,8 @@
             android:layout_marginTop="10dp"
             android:text="Աղցան/Salad/Салат"
             android:textSize="22dp"
-            android:textColor="@color/white"
+            android:onClick="salad"
+            android:textColor="#78D2FA"
             android:shadowDx="10"
             android:shadowDy="15"
             android:shadowRadius="6"
@@ -61,12 +63,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
+
             android:layout_marginTop="10dp"
             android:text="Արագ Սնունդ/Fast food/Быстрое питание"
             android:textSize="22dp"
             android:shadowDx="10"
             android:shadowDy="15"
             android:shadowRadius="6"
+            android:textColor="#78D2FA"
             android:shadowColor="#000000"
             tools:ignore="TextSizeCheck"
             android:textStyle="bold"
@@ -76,12 +80,14 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="-5dp"
+            android:onClick="drink"
             android:text="Խմիչքներ/Drinks/Напитки"
             android:textSize="22dp"
             android:shadowDx="10"
             android:shadowDy="15"
             android:shadowRadius="6"
             android:shadowColor="#000000"
+            android:textColor="#78D2FA"
             tools:ignore="TextSizeCheck"
             android:textStyle="bold"
             style="@style/Widget.AppCompat.Button.Borderless"/>
@@ -91,6 +97,7 @@
             android:layout_marginLeft="67dp"
             android:layout_marginTop="5dp"
             android:text="Սուրճ/Coffee/Кофе"
+            android:textColor="#78D2FA"
             android:textSize="22dp"
             android:shadowDx="10"
             android:shadowDy="15"
@@ -104,6 +111,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="25dp"
+            android:textColor="#78D2FA"
             android:text="Թխվածքներ/Cake/Торт"
             android:textSize="22dp"
             android:shadowDx="10"
