@@ -96,7 +96,7 @@
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Թուներ/Маринады/Marinades"
+            android:text="Թթուներ/Маринады/Marinades"
             android:textColor="@color/white" />
 
         <TextView
