@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Emenu2"
         tools:targetApi="31">
         <activity
+            android:name=".Coffee"
+            android:exported="false" />
+        <activity
             android:name=".cakes"
             android:exported="false" />
         <activity

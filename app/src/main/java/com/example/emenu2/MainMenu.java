@@ -29,5 +29,9 @@ public class MainMenu extends AppCompatActivity {
         Intent i = new Intent(MainMenu.this, Drint.class);
         startActivity(i);
     }
+    public void junk_food(View view){
+        Intent i = new Intent(MainMenu.this, Fast_Food.class);
+        startActivity(i);
+    }
 
 }
