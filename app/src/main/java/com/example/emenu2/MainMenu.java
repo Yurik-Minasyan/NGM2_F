@@ -77,7 +77,10 @@ public class MainMenu extends AppCompatActivity {
         array.add("Water");//45
         array.add("Micado");//46
         array.add("Napoleon");//47
+
         array.add("Caramel filled donut");//48
+        array.add("Ջուր");//49
+        array.add("Вода");//50
         adapter=new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,array);
         lw.setAdapter(adapter);
         sw.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -88,35 +91,41 @@ public class MainMenu extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String s) {
-                lw.setVisibility(View.VISIBLE);
-                adapter.getFilter().filter(s);
+                if(s.length() != 0){
+                    lw.setVisibility(View.VISIBLE);
+                    adapter.getFilter().filter(s);
+                }
+                else{
+                    lw.setVisibility(View.GONE);
+                }
+
                 return false;
             }
         });
         lw.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(position == 0 || position == 1 ||position == 2 ||position == 15 ||position == 16 ||position == 17 || position == 30 ||position == 31 ||position == 32){
+                if(id == 0 || id == 1 |id == 2 ||id == 15 ||id == 16 ||id == 17 || id == 30 ||id == 31 ||id == 32){
                     Intent i = new Intent(MainMenu.this, naxutest.class);
                     startActivity(i);
                 }
-                if(position == 3 || position == 4 ||position == 5 ||position == 18 ||position == 19 || position == 20 ||position == 33 ||position == 34 ||position == 35){
+                if(id == 3 || id == 4 ||id == 5 ||id == 18 ||id == 19 || id == 20 ||id == 33 ||id == 34 |id == 35){
                     Intent i = new Intent(MainMenu.this, Salad.class);
                     startActivity(i);
                 }
-                if(position == 6 || position == 7 ||position == 8 ||position == 21 ||position == 22 || position == 33 ||position == 36 ||position == 37 ||position == 38){
+                if(id == 6 || id == 7 ||id == 8 |id == 21 ||id == 22 || id == 33 ||id == 36 ||id == 37 ||id == 38){
                     Intent i = new Intent(MainMenu.this, Fast_Food.class);
                     startActivity(i);
                 }
-                if(position == 9 || position == 10 ||position == 11 ||position == 24 ||position == 25 || position == 26 ||position == 39 ||position == 40 ||position == 41){
+                if(id == 9 ||id == 10 ||id == 11 ||id == 24 ||id == 25 || id == 26 ||id == 39 ||id == 40 ||id == 41){
                     Intent i = new Intent(MainMenu.this, Coffee.class);
                     startActivity(i);
                 }
-                if(position == 12 || position == 13 ||position == 14 ||position == 27 ||position == 28 || position == 29 ||position == 46 ||position == 47 ||position == 48){
+                if(id == 12 || id == 13 ||id == 14 ||id == 27 ||id == 28 || id== 29 ||id == 46 ||id == 47 ||id == 48){
                     Intent i = new Intent(MainMenu.this, cakes.class);
                     startActivity(i);
                 }
-                if(position == 42 || position == 43 ||position == 44 ||position == 45){
+                if(id == 42 || id == 43 ||id == 44 ||id == 45 || id == 49 || id == 50){
                     Intent i = new Intent(MainMenu.this, Drint.class);
                     startActivity(i);
                 }
