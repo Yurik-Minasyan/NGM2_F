@@ -39,6 +39,23 @@
             android:textColor="@color/white"
             android:textAlignment="center"
             android:text="3000դր/др/amd" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editTextNumber15"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_view"
+                android:inputType="number" />
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:srcCompat="@drawable/cart"
+                android:gravity="end"/>
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -74,6 +91,23 @@
             android:text="2500դր/др/amd"
             android:textAlignment="center"
             android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editTextNumber14"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_view"
+                android:inputType="number" />
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:srcCompat="@drawable/cart"
+                android:gravity="end"/>
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -107,6 +141,23 @@
             android:text="1800դր/др/amd"
             android:textAlignment="center"
             android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editTextNumber13"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_view"
+                android:inputType="number" />
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:srcCompat="@drawable/cart"
+                android:gravity="end"/>
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"

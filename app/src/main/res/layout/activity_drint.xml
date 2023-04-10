@@ -41,6 +41,23 @@
             android:text="500դր/др/amd"
             android:textAlignment="center"
             android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editTextNumber3"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_view"
+                android:inputType="number" />
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:srcCompat="@drawable/cart"
+                android:gravity="end"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -77,6 +94,23 @@
             android:text="500դր/др/amd"
             android:textAlignment="center"
             android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editTextNumber18"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_view"
+                android:inputType="number" />
+            <ImageButton
+                android:id="@+id/imageButton18"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:srcCompat="@drawable/cart"
+                android:gravity="end"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -112,6 +146,23 @@
             android:text="500դր/др/amd"
             android:textAlignment="center"
             android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editTextNumber17"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_view"
+                android:inputType="number" />
+            <ImageButton
+                android:id="@+id/imageButton17"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:srcCompat="@drawable/cart"
+                android:gravity="end"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -147,6 +198,23 @@
             android:text="300դր/др/amd"
             android:textAlignment="center"
             android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editTextNumber16"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_view"
+                android:inputType="number" />
+            <ImageButton
+                android:id="@+id/imageButton16"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:srcCompat="@drawable/cart"
+                android:gravity="end"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout

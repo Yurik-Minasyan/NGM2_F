@@ -8,9 +8,10 @@
     android:background="@drawable/back">
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="35dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,24 +31,44 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Միկադո/Микадо/Micado"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:text="550դր/др/amd"
             android:textAlignment="center"
-            android:text="550դր/др/amd" />
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editTextNumber3"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_view"
+                android:inputType="number" />
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:srcCompat="@drawable/cart"
+                android:gravity="end"/>
+        </LinearLayout>
+
+
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="210dp"
         android:layout_marginTop="35dp"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
@@ -64,7 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Նապոլեոն/Наполеон/Napoleon"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView3"
@@ -72,17 +93,36 @@
             android:layout_height="wrap_content"
             android:text="600դր/др/amd"
             android:textAlignment="center"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_view"
+                android:inputType="number" />
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:srcCompat="@drawable/cart"
+                android:gravity="end"/>
+        </LinearLayout>
+
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/linearLayout6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="250dp"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp">
 
         <ImageView
             android:id="@+id/imageView8"
@@ -97,7 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Կարամելային միջուկով դոնաթ/Донат с карамельной начинкой/Caramel filled donut"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView6"
@@ -105,16 +145,34 @@
             android:layout_height="wrap_content"
             android:text="750դր/др/amd"
             android:textAlignment="center"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editTextNumber4"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_view"
+                android:inputType="number" />
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:srcCompat="@drawable/cart"
+                android:gravity="end"/>
+        </LinearLayout>
+
+
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="250dp"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -130,7 +188,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text=""
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView9"
@@ -138,7 +196,7 @@
             android:layout_height="wrap_content"
             android:text=""
             android:textAlignment="center"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
