@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/download2"
+    android:background="@drawable/back"
     tools:context=".MainMenu">
         <LinearLayout
             android:layout_width="match_parent"
@@ -14,8 +14,8 @@
                 <ImageButton
                     android:id="@+id/button0"
                     android:onClick="home"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     app:srcCompat="@drawable/home"
                     style="@style/Widget.AppCompat.Button.Borderless"
                     tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
@@ -28,16 +28,16 @@
                         <ImageButton
                             android:id="@+id/button1"
                             style="@style/Widget.AppCompat.Button.Borderless"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:onClick="search"
                             app:srcCompat="@drawable/search"
                             tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
                         <ImageButton
                             android:id="@+id/button2"
                             style="@style/Widget.AppCompat.Button.Borderless"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:onClick="cart"
                             app:srcCompat="@drawable/cart"
                             tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
@@ -68,7 +68,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
@@ -81,12 +81,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
                     android:onClick="snack"
-                    android:shadowColor="#000000"
-                    android:shadowDx="10"
-                    android:shadowDy="15"
-                    android:shadowRadius="6"
                     android:text="Նախուտեստներ/Snacks/Закуски"
-                    android:textColor="#78D2FA"
+                    android:textColor="#000000"
                     android:textSize="22dp"
                     android:textStyle="bold"
                     tools:ignore="TextSizeCheck" />
@@ -98,12 +94,9 @@
                     android:layout_marginLeft="65dp"
                     android:layout_marginTop="10dp"
                     android:onClick="salad"
-                    android:shadowColor="#000000"
-                    android:shadowDx="10"
-                    android:shadowDy="15"
                     android:shadowRadius="6"
                     android:text="Աղցան/Salad/Салат"
-                    android:textColor="#78D2FA"
+                    android:textColor="#000000"
                     android:textSize="22dp"
                     android:textStyle="bold"
                     tools:ignore="TextSizeCheck" />
@@ -115,12 +108,8 @@
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="10dp"
                     android:onClick="junk_food"
-                    android:shadowColor="#000000"
-                    android:shadowDx="10"
-                    android:shadowDy="15"
-                    android:shadowRadius="6"
                     android:text="Արագ Սնունդ/Fast food/Быстрое питание"
-                    android:textColor="#78D2FA"
+                    android:textColor="#000000"
                     android:textSize="22dp"
                     android:textStyle="bold"
                     tools:ignore="TextSizeCheck" />
@@ -132,12 +121,8 @@
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="-5dp"
                     android:onClick="drink"
-                    android:shadowColor="#000000"
-                    android:shadowDx="10"
-                    android:shadowDy="15"
-                    android:shadowRadius="6"
                     android:text="Խմիչքներ/Drinks/Напитки"
-                    android:textColor="#78D2FA"
+                    android:textColor="#000000"
                     android:textSize="22dp"
                     android:textStyle="bold"
                     tools:ignore="TextSizeCheck" />
@@ -148,13 +133,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="67dp"
                     android:layout_marginTop="5dp"
-                    android:shadowColor="#000000"
-                    android:shadowDx="10"
-                    android:shadowDy="15"
                     android:onClick="coffee"
-                    android:shadowRadius="6"
                     android:text="Սուրճ/Coffee/Кофе"
-                    android:textColor="#78D2FA"
+                    android:textColor="#000000"
                     android:textSize="22dp"
                     android:textStyle="bold"
                     tools:ignore="TextSizeCheck" />
@@ -165,13 +146,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="60dp"
                     android:layout_marginTop="25dp"
-                    android:shadowColor="#000000"
-                    android:shadowDx="10"
-                    android:shadowDy="15"
-                    android:shadowRadius="6"
                     android:onClick="cake"
                     android:text="Թխվածքներ/Cake/Торт"
-                    android:textColor="#78D2FA"
+                    android:textColor="#000000"
                     android:textSize="22dp"
                     android:textStyle="bold"
                     tools:ignore="TextSizeCheck" />
