@@ -8,6 +8,45 @@
     android:background="@drawable/download2"
     tools:context=".MainMenu">
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/button0"
+                    android:onClick="home"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/home"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    >
+                        <ImageButton
+                            android:id="@+id/button1"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:onClick="search"
+                            app:srcCompat="@drawable/search"
+                            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+                        <ImageButton
+                            android:id="@+id/button2"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:onClick="cart"
+                            app:srcCompat="@drawable/cart"
+                            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"

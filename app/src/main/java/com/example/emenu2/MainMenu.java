@@ -156,5 +156,9 @@ public class MainMenu extends AppCompatActivity {
         Intent i = new Intent(MainMenu.this, cakes.class);
         startActivity(i);
     }
+    public void home(View view){
+        Intent i = new Intent(MainMenu.this, MainMenu.class);
+        startActivity(i);
+    }
 
 }
