@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SearchView;
 
@@ -14,11 +15,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
 public class MainMenu extends AppCompatActivity {
-
     SearchView sw;
     ListView lw;
     ArrayList<String> array;
     ArrayAdapter<String> adapter;
+
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -129,6 +131,15 @@ public class MainMenu extends AppCompatActivity {
                     Intent i = new Intent(MainMenu.this, Drint.class);
                     startActivity(i);
                 }
+            }
+        });
+        ImageButton search = (ImageButton)findViewById(R.id.button2);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainMenu.this, Orders.class);
+                startActivity(i);
+
             }
         });
     }

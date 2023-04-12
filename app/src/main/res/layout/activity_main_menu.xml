@@ -37,8 +37,10 @@
                             style="@style/Widget.AppCompat.Button.Borderless"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+
                             android:onClick="cart"
                             app:srcCompat="@drawable/cart"
+
                             tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
                 </LinearLayout>
         </LinearLayout>
